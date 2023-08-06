@@ -70,7 +70,7 @@ class LongURL(BaseModel):
 def shorten_url(long_url: LongURL):
     short_url = create_short_url(long_url.url)
     # Construct full URL
-    full_shortened_url = f"http://localhost:8000/{short_url}"
+    full_shortened_url = f"https://tinyurl-server-xa3n.onrender.com/{short_url}"
     return {"short_url": full_shortened_url}  # Return full URL
 
 # API endpoint to get all URLs in a paginated format
